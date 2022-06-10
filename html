@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <!-- reference: https://codepen.io/devenol/full/pogKWEO -->
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>The Nosy Survey</title>
+    <meta charser='utf8'/>
+  </head>
+
+  <body>
+    <h1 id='title' class="title">The Nosy Survey</h1>
+
+    <p id='description'>I want to know allllll of your business, so tell me about it below!</p>
+  
+  
+    <form id='survey-form'>
+
+      <label id='name-label'>Please Enter Your Name<input class='initial-info' id='name' required placeholder='Jane Smith' /></label>
+      
+      <label id='email-label'>Please Enter Your Email<input class='initial-info' id='email' type='email' placeholder='janesmith@gmail.com' required /></label>
+    
+    <label id='number-label'>Please Enter Your Age<input class="initial-info" id='number'type='number' min='1' max="300" placeholder='22' required /></label>
+
+    <label class="qlabel">How many friends do you have?</label>
+<!-- question 1: Radio -->
+    <label class="radio"><input name='radio' type='radio' value='radio-hover' />None</label>
+    <label class='radio'><input name='radio' type='radio' value='radio-hover' />One to Three</label>
+    <label class='radio'><input name='radio' type='radio' value='radio-hover'/>Three to Six</label>
+    <label class='radio'><input name='radio' type='radio' value='radio-hover'/>Seven =< </label>
+    <!-- Question 2: Radio -->
+    <label class='qlabel2'>How many of them secretly hate you?</label>
+        <label class="radio"><input name='radio' type='radio' value='radioc' />None! They love me!</label>
+    <label class='radio'><input name='radio' type='radio' value='radioc' />Maybe a few...</label>
+    <label class='radio'><input name='radio' type='radio' value='radioc'/>Probably all of them</label>
+    <!-- Question 3: Dropdown -->
+    <label class='qlabel2'>How about the humber of your current <strong>BEST</strong> friends?</label>
+
+  <label></label>
+      <div>
+        <select id='dropdown'>
+          <option disabled selected hidden class='option'>Please choose an option</option>
+          <option class='option'>One</option>
+          <option class='option'>Two</option>
+          <option class='option'>Three</option>
+          <option class='option'>Wayyy more</option>
+        </select>
+      </div>
+<!-- Question 4: checkboxes -->
+        <label class='qlabel2'>What are your <strong>WORST</strong> qualities? </label>
+        <label class='checkboxtemp'><input type='checkbox' value='checkbox'/>Selfish</label>
+        <label class='checkbox'><input type='checkbox' value='checkbox'/>Rude</label>
+        <label class='checkbox'><input type='checkbox' value='checkbox'/>Neglectful</label>
+        <label class='checkbox'><input type='checkbox' value='checkbox'/>Stingy</label>
+        <label class='checkbox'><input type='checkbox' value='checkbox'/>Spoiled</label>
+        <label class='checkbox'><input type='checkbox' value='checkbox'/>Envious</label>
+        <label class='checkbox'><input type='checkbox' value='checkbox'/>Dishonesty</label>
+        
+        <!-- Text Area  -->
+        <label class="qlabel4">Whats the best thing about having friends? </label>
+        <textarea placeholder="Tell me about it here..."></textarea>
+
+        <label class='qlabel5'>Make sure to click submit!</label>
+        <input id='submit' type='submit' class='submit'/>
+        
+  </form>
+      
+  </body> 
+</html>
